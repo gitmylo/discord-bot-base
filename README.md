@@ -1,3 +1,4 @@
+![bruh image dont load](https://cdn.worldvectorlogo.com/logos/discord.svg)
 # discord bot base
 Discord bot base is a base for discord bots made in java using JDA
 ## usage
