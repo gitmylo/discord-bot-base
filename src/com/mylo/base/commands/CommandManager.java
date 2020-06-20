@@ -1,6 +1,7 @@
 package com.mylo.base.commands;
 
 import com.mylo.base.commands.command.General.Help;
+import com.mylo.base.commands.command.General.Ping;
 import com.mylo.base.main.BotStart;
 import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.events.GenericEvent;
@@ -18,6 +19,7 @@ public class CommandManager extends ListenerAdapter {
         //adding commands
         //General
         Commands.add(new Help());
+        Commands.add(new Ping());
         //Moderation
 
         //Fun
