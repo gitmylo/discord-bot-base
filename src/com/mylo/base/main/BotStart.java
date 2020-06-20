@@ -8,7 +8,7 @@ public class BotStart {
     public static BotStart instance;
 
     public String prefix = "!";
-    JDA bot;
+    public JDA bot;
 
     public BotStart(String token){
         try{
@@ -16,7 +16,7 @@ public class BotStart {
 
         }
         catch (Exception e){
-
+            e.printStackTrace();
         }
     }
 

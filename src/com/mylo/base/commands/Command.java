@@ -1,8 +1,10 @@
 package com.mylo.base.commands;
 
 import net.dv8tion.jda.api.Permission;
+import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
+import net.dv8tion.jda.api.hooks.EventListener;
 
-public abstract class Command {
+public abstract class Command implements EventListener {
     String[] triggers;
     Permission[] requiredPerms;
     String description;
@@ -14,5 +16,5 @@ public abstract class Command {
         this.description = description;
     }
 
-    public abstract void Run(String[] args);
+    public abstract void Run(MessageReceivedEvent e);
 }
