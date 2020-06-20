@@ -17,13 +17,13 @@ public class Ping extends Command {
     public void Run(MessageReceivedEvent e) {
         long ping = BotStart.instance.bot.getGatewayPing();
         int pingcolor = 0x00ff00;
-        if (ping > 100){
+        if (ping > 200){
             pingcolor = 0xFCFF00;
         }
-        if (ping > 250){
+        if (ping > 500){
             pingcolor = 0xFF9600;
         }
-        if (ping > 500){
+        if (ping > 1000){
             pingcolor = 0xff0000;
         }
         MessageEmbed embed = new EmbedBuilder().setColor(pingcolor).addField("Pong!", "Ping is " + ping + "MS!",false).build();
